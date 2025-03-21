@@ -1,0 +1,9 @@
+services:
+  cs135-web-dev:
+    image: dinguyen104/cs135-web-dev:latest
+    container_name: cs135-web-dev
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./app:/app
+      - /Users/vdnguyen/.ssh:/app/.ssh
